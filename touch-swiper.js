@@ -147,19 +147,19 @@ class Swiper {
             if (yx <= this.limit) {
                 if (x < 0) {
                     // Left
-                    this.onLeft();
+                    this.onLeft && this.onLeft();
                 } else {
                     // Right
-                    this.onRight();
+                    this.onRight && this.onRight();
                 }
             }
             if (xy <= this.limit) {
                 if (y < 0) {
                     // Top
-                    this.onTop();
+                    this.onTop && this.onTop();
                 } else {
                     // Down
-                    this.onDown();
+                    this.onDown && this.onDown();
                 }
             }
         } else {
